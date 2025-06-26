@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  min-height: 100vh;
+  color: #002766;
+  position: relative;
+  overflow-x: hidden;
+}
+.robot-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  left: 0; top: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: #000;
+}
+.robot-bg img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.65) blur(1px);
+  opacity: 0.88;
+  transition: opacity 0.7s;
+}
+header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.logo-pmt {
+  width: 110px;
+  max-width: 36vw;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.21);
+  background: rgba(255,255,255,0.03);
+  padding: 8px;
+}
+h1 {
+  font-size: 2.8rem;
+  color: #002766;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  text-shadow: 0 2px 12px #fff, 0 0px 2px #d90429;
+}
+.subtitle {
+  color: #d90429;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  text-shadow: 0 1px 6px #fff;
+}
+main {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 2rem auto 1rem auto;
+  background: rgba(255,255,255,0.88);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.09);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+section.advertise ul {
+  list-style: none;
+  padding: 0;
+}
+section.advertise ul li {
+  font-size: 1.12rem;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #d90429;
+  background: rgba(0,39,102,0.03);
+}
+.price {
+  margin: 2rem 0 0 0;
+  font-size: 1.5rem;
+}
+.price .unknown {
+  color: #d90429;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+section.quotes {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+section.quotes blockquote {
+  font-size: 1.32rem;
+  color: #002766;
+  font-style: italic;
+  background: rgba(217,4,41,0.06);
+  border-left: 6px solid #002766;
+  margin: 1.2rem auto;
+  padding: 1.2rem 1rem 1.2rem 1.5rem;
+  max-width: 520px;
+  border-radius: 8px;
+  min-height: 48px;
+  transition: color 0.3s, background 0.3s;
+}
+section.contact {
+  margin-top: 2.5rem;
+  background: rgba(0,39,102,0.04);
+  border-radius: 10px;
+  padding: 1.2rem 1rem 0.8rem 1rem;
+  text-align: center;
+}
+section.contact a, section.contact .phone {
+  color: #d90429;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.18rem;
+  display: block;
+  margin: 0.2rem 0;
+}
+section.contact a:hover {
+  text-decoration: underline;
+}
+section.contact .contact-label {
+  display: inline-block;
+  color: #002766;
+  margin-right: 0.3em;
+  font-weight: 500;
+}
+footer {
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+  color: #888;
+  font-size: 0.95rem;
+  z-index: 2;
+  position: relative;
+}
+@media (max-width: 800px) {
+  main {
+    margin: 1rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
